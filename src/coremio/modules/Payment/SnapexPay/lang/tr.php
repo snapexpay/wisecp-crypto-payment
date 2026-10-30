@@ -1,0 +1,41 @@
+<?php
+return [
+    'name' => 'SnapEX Pay (Kripto)',
+    'invoice-name' => 'SnapEX Pay — kripto',
+    'option-name' => 'SnapEX Pay — kripto (USDT ve diğer coinler)',
+    'description' => 'Birden fazla ağda USDT veya USDT\'ye çevrilen diğer coinlerle ödeme alın. Tutarlar SnapEX Pay üye işyeri bakiyenize geçer.',
+    'pay-button' => 'Kripto ile öde',
+
+    'api-key' => 'API anahtarı',
+    'api-key-desc' => 'SnapEX Pay üye işyeri paneli → API anahtarları. Yetkiler: invoices.read ve invoices.write.',
+    'webhook-secret' => 'Webhook gizli anahtarı',
+    'webhook-secret-desc' => 'SnapEX Pay panelinde bu URL ile bir webhook ekleyin ve whsec_… anahtarını buraya yapıştırın: %s',
+    'fee-on' => 'Ağ ücretini ödeyen',
+    'fee-on-merchant' => 'Üye işyeri (müşteri fatura tutarını öder)',
+    'fee-on-customer' => 'Müşteri (fatura tutarına eklenir)',
+    'expires-minutes' => 'Ödeme süresi, dakika',
+    'expires-minutes-desc' => 'Ödeme sayfası açıldıktan sonra müşterinin ödeme yapabileceği süre (1–1440).',
+    'test-mode' => 'Test modu',
+    'test-mode-desc' => 'Test faturaları gerçek para olmadan kendiliğinden onaylanır. Bu mod açıkken butonu yalnızca giriş yapmış yönetici görür.',
+    'partner-id' => 'Partner ID',
+    'partner-id-desc' => 'İsteğe bağlı. Kurulumu yapan entegratörün Partner ID\'si (SnapEX Pay ortaklık programı). Kurulumu kendiniz yaptıysanız boş bırakın.',
+    'api-url' => 'API URL',
+    'api-url-desc' => 'Olduğu gibi bırakın.',
+
+    'test-mode-note' => 'Test modu: gerçek para çekilmez.',
+    'test-mode-clients' => 'Kripto ödemeler hazırlanıyor. Şimdilik lütfen başka bir ödeme yöntemi seçin.',
+    'error-create' => 'Kripto ödeme başlatılamadı: %s',
+    'error-currency' => 'SnapEX Pay USD ile çalışır ve %s dönüştürülemedi. Site sahibinden ödeme yöntemini USD\'ye dönüştürecek şekilde ayarlamasını isteyin.',
+    'error-amount' => 'Ödenecek tutar yok.',
+
+    'waiting-title' => 'Ödeme bekleniyor',
+    'waiting-text' => 'SnapEX Pay\'den henüz onay gelmedi. Bu sayfa her 10 saniyede bir tekrar kontrol eder ve ödeme onaylanınca kendiliğinden devam eder.',
+    'waiting-checked' => 'Son kontrol: %s UTC',
+    'waiting-open' => 'Ödeme sayfasını aç',
+    'waiting-status' => 'Durum: %s',
+
+    'msg-invoice' => 'SnapEX Pay faturası',
+    'msg-paid-with' => 'Ödeme',
+    'msg-environment' => 'Ortam',
+    'msg-partial' => 'Kısmi ödeme: %s alındı. Onaylamadan önce faturayı kontrol edin.',
+];

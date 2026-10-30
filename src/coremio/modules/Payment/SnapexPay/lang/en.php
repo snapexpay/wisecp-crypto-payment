@@ -1,0 +1,41 @@
+<?php
+return [
+    'name' => 'SnapEX Pay (Crypto)',
+    'invoice-name' => 'SnapEX Pay — crypto',
+    'option-name' => 'SnapEX Pay — crypto (USDT and other coins)',
+    'description' => 'Accept USDT on several networks or other coins swapped to USDT. Funds arrive in your SnapEX Pay merchant balance.',
+    'pay-button' => 'Pay with crypto',
+
+    'api-key' => 'API key',
+    'api-key-desc' => 'SnapEX Pay merchant cabinet → API keys. Scopes: invoices.read and invoices.write.',
+    'webhook-secret' => 'Webhook secret',
+    'webhook-secret-desc' => 'In the SnapEX Pay cabinet add a webhook with this URL and paste its whsec_… secret here: %s',
+    'fee-on' => 'Network fee paid by',
+    'fee-on-merchant' => 'Merchant (client pays the invoice amount)',
+    'fee-on-customer' => 'Client (added on top of the invoice amount)',
+    'expires-minutes' => 'Payment window, minutes',
+    'expires-minutes-desc' => 'How long the client has to pay once the payment page is opened (1–1440).',
+    'test-mode' => 'Test mode',
+    'test-mode-desc' => 'Test invoices confirm by themselves without real money. Only a logged-in admin sees the button while this is on.',
+    'partner-id' => 'Partner ID',
+    'partner-id-desc' => 'Optional. The Partner ID of the integrator who set this up (SnapEX Pay referral program). Leave empty if you set it up yourself.',
+    'api-url' => 'API URL',
+    'api-url-desc' => 'Leave as is.',
+
+    'test-mode-note' => 'Test mode: no real money is charged.',
+    'test-mode-clients' => 'Crypto payments are being set up. Please choose another payment method for now.',
+    'error-create' => 'Could not start the crypto payment: %s',
+    'error-currency' => 'SnapEX Pay works in USD and %s could not be converted. Ask the site owner to set the payment method to convert to USD.',
+    'error-amount' => 'Nothing to pay.',
+
+    'waiting-title' => 'Waiting for the payment',
+    'waiting-text' => 'We have not received the confirmation from SnapEX Pay yet. This page checks again every 10 seconds and moves on by itself once the payment is confirmed.',
+    'waiting-checked' => 'Last checked: %s UTC',
+    'waiting-open' => 'Open the payment page',
+    'waiting-status' => 'Status: %s',
+
+    'msg-invoice' => 'SnapEX Pay invoice',
+    'msg-paid-with' => 'Paid with',
+    'msg-environment' => 'Environment',
+    'msg-partial' => 'Partial payment: %s received. Review the invoice before approving it.',
+];
